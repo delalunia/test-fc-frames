@@ -10,10 +10,10 @@ const frameMetadata = getFrameMetadata({
     {
       action: 'link',
       label: 'View Ante',
-      target: 'https://app.ante.xyz',
+      target: 'https://app.ante.xyz/stake/',
     },
     {
-      label: 'Redirect to pictures',
+      label: 'app.ante.xyz',
       action: 'post_redirect',
     },
   ],
