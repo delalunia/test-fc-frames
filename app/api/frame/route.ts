@@ -24,11 +24,13 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     );
   }
 
+  // TODO Function to get ante
+
   return new NextResponse(
     getFrameHtmlResponse({
       buttons: [
         {
-          label: `Stake Against!`,
+          label: `${text} Staked Against!`,
         },
       ],
       image: {
