@@ -5,12 +5,12 @@ import { NEXT_PUBLIC_URL } from './config';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'Story time!',
+      label: 'Stake Against!',
     },
     {
       action: 'link',
-      label: 'Link to Google',
-      target: 'https://www.google.com',
+      label: 'View Ante',
+      target: 'https://app.ante.xyz',
     },
     {
       label: 'Redirect to pictures',
@@ -18,7 +18,7 @@ const frameMetadata = getFrameMetadata({
     },
   ],
   image: {
-    src: `${NEXT_PUBLIC_URL}/park-3.png`,
+    src: `${NEXT_PUBLIC_URL}/ante-gearwave-banner2x.png`,
     aspectRatio: '1:1',
   },
   input: {
@@ -28,12 +28,13 @@ const frameMetadata = getFrameMetadata({
 });
 
 export const metadata: Metadata = {
-  title: 'zizzamia.xyz',
-  description: 'LFG',
+  metadataBase: new URL(NEXT_PUBLIC_URL),
+  title: 'app.ante.xyz',
+  description: 'Ante',
   openGraph: {
-    title: 'zizzamia.xyz',
-    description: 'LFG',
-    images: [`${NEXT_PUBLIC_URL}/park-1.png`],
+    title: 'app.ante.xyz',
+    description: 'Ante',
+    images: [`${NEXT_PUBLIC_URL}/ante-gearwave-banner2x.png`],
   },
   other: {
     ...frameMetadata,
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>zizzamia.xyz</h1>
+      <h1>app.ante.xyz</h1>
     </>
   );
 }
